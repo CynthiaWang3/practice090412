@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>My Website</title>
+    <!-- note normalize.min.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" />
+    <!-- note bootstrap.min.css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    <!-- note animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- note font-awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- basic.css -->
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- note nav -->
+    <nav>
+        <!-- 漢堡按鈕 -->
+        <button class="show-menu-btn" id="showMenuBtn"></button>
+        <a href="" class="brand">Cynthia's Profile</a>
+        <ul class="nav-list">
+            <li>
+                <a class="scroll-btn" href="#basicIntronSection">Intro</a>
+            </li>
+            <li>
+                <a class="scroll-btn" href="#layoutSection">Recipe</a>
+            </li>
+
+            <li>
+                <a class="scroll-btn" href="#carouselSection">Gallery</a>
+            </li>
+            <li>
+                <a class="scroll-btn" href="#footer">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- nav end -->
+    <!-- note header -->
+    <header class="jumbotron" id="header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h1 class="header-title">Food lover</h1>
+                    <h3 class="header-subtitle">熱愛手作，瑜伽，旅行</h3>
+                </div>
+            </div>
+            <a href="#basicIntronSection" class="scroll-btn header-scroll-down-btn"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- note basic-intro-section -->
+    <section id="basicIntronSection">
+        <h1 class="section-title">Intro</h1>
+        <img class="portrait img-circle" src="img/portrait.jpg" alt="">
+        <h4 class="greetings">Daydreamer, foodie, yogi</h4>
+        <!-- todo 三欄式版型 -->
+    </section>
+    <!-- basic-intro-section end -->
+
+    <!-- note #layoutSection -->
+    <section id="layoutSection">
+        <h1 class="section-title">recipe</h1>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-sm-6">
+                    <h2>巧克力蛋糕</h2>
+                    <img class="img-responsive img-thumbnail" src="https://source.unsplash.com/800x600?chocolate" alt="巧克力">
+                    <p>For the cake, place all of the cake ingredients, except the boiling water, into a large mixing bowl. Using a wooden spoon, or electric whisk, beat the mixture until smooth and well combined.Perfect for birthdays, this is a great recipe for an easy, foolproof chocolate cake. It's moist and fudgy and will keep well for 4-5 days.</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h2>檸檬塔</h2>
+                    <img class="img-responsive img-thumbnail" src="https://source.unsplash.com/800x600?lemon" alt="檸檬塔">
+                    <p>Rich lemon filling makes up the center of a decadent tart with a golden-brown shortbread crust.It can be made up to two days in advance, but don't decorate it until just before serving.Light, refreshing and tangy, this baked lemon tart is a timeless classic.</p>
+                </div>
+
+                <div class="clearfix visible-sm"></div>
+
+                <div class="col-md-3 col-sm-6">
+                    <h2>提拉米蘇</h2>
+                    <img class="img-responsive img-thumbnail" src="https://source.unsplash.com/800x600?tiramisu" alt="提拉米蘇">
+                    <p>Tiramisu is a popular coffee-flavoured Italian custard dessert. It is made of ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone cheese, flavoured with cocoa.A liqueur dessert is a sure way to warm up this winter and this classic tiramisu is sure to be a crowd pleaser.</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h2>草莓千層蛋糕</h2>
+                    <img class="img-responsive img-thumbnail" src="https://source.unsplash.com/800x600?strawberry" alt="strawberry">
+                    <p>A delicious layered dessert. Puff pastry, cream, strawberries = delicious! To assemble the mille-feuille, Add half the strawberries and press into the pastry cream. Layer with one of the reserved piece of puff pastry. Cover with the whipped cream. This interesting and elaborate dessert works really well for a dinner party.</p>
+                </div>
+
+                <div class="clearfix visible-md"></div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--  note #carouselSection -->
+    <section id="carouselSection">
+        <h1 class="section-title">Gallery</h1>
+        <div class="carousel slide" id="carousel1" data-ride="carousel" data-interval="1800">
+            <!--小圓點-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel1" data-slide-to="1"></li>
+                <li data-target="#carousel1" data-slide-to="2"></li>
+                <li data-target="#carousel1" data-slide-to="3"></li>
+            </ol>
+            <!-- 內容 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div id="slide1">
+                        <div class="carousel-caption">
+                            <h1>瑜珈</h1>
+                            <p>everyday workout and relaxation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div id="slide2">
+                        <div class="carousel-caption">
+                            <h1>你我都需要</h1>
+                            <p>A bit of freshness.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div id="slide3">
+                        <div class="carousel-caption">
+                            <h1>追尋</h1>
+                            <p>We all need someone else's company.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div id="slide4">
+                        <div class="carousel-caption">
+                            <h1>一點點甜</h1>
+                            <p>The best way to end a meal with sweets immerse in your mouth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 前一張 後一張 -->
+            <div class="control-btn">
+                <!--前一張-->
+                <a href="#carousel1" data-slide="prev" class="left carousel-control">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <!--後一張-->
+                <a href="#carousel1" data-slide="next" class="right carousel-control">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- note footer -->
+    <footer id="footer">
+        <h1 class="section-title">與我聯繫：sweetlovpea@gmail.com</h1>
+        <!-- todo email -->
+        <!-- todo phone-number -->
+        <div class="social-media-links">
+            <!-- todo social-media-links -->
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- note jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- note jQuery Easing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- note bootstrap.js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- note wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
